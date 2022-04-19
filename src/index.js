@@ -1,29 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Hello from './components/Hello'
 
 
-// Atualizando o elemento Renderizado
+// Passando propriedades para o componente
 
-function tick(){
-
-  const element = (
-    <div>
-      <h1>Hello world, {formatName('Jansen', 'Lima')}!</h1>
-      <h2>Horário local: {new Date().toLocaleTimeString()}.</h2>  
-    </div>
-  );
-  
-  function formatName(n, ln) {
-    const name = n;
-    const lastName = ln;
-    return <b>{name} {lastName}</b>
-  }
-  
-  ReactDOM.render(
-    element,
-    document.getElementById('root')
-  );
-
-}
-
-setInterval(tick, 1000)
+ReactDOM.render(
+  <Hello name='Jansen' lastName='Lima'/>,
+  document.getElementById('root')
+);
