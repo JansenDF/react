@@ -6,6 +6,10 @@ import Hello from './components/Hello'
 // Passando propriedades para o componente
 
 ReactDOM.render(
-  <Hello name='Jansen' lastName='Lima'/>,
+  <div>
+    <Hello name='Jansen' lastName='Lima'/>
+    <Hello name='Daniele' lastName='Dias'/>
+    <Hello name='Lucas' lastName='Lima'/>
+  </div>,
   document.getElementById('root')
 );
