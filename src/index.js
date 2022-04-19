@@ -1,18 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Hello from './components/Hello'
 
 
-// Introdução ao JSX
-
-const element = <h1>Hello world, {formatName('Jansen', 'Lima')}!</h1>;
-
-function formatName(n, ln) {
-  const name = n;
-  const lastName = ln;
-  return <b>{name} {lastName}</b>
-}
+// Passando propriedades para o componente
 
 ReactDOM.render(
-  element,
+  <Hello name='Jansen' lastName='Lima'/>,
   document.getElementById('root')
 );
