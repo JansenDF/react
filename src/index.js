@@ -11,7 +11,7 @@ ReactDOM.render(
     <Hello name='Jansen' lastName='Lima'/>
     <Hello name='Daniele' lastName='Dias'/>
     <Hello name='Lucas' lastName='Lima'/>
-    <Clock date={new Date()}/>
+    <Clock />
   </div>,
   document.getElementById('root')
 );
